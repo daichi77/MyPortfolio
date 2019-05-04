@@ -1,45 +1,45 @@
 <template>
     <div>
         <div class="title">
-            MyApp
+            Study
         </div>
         <ul id="menu">
-            <li @click="change('kanayado')" v-bind:class="{ active: page === 'kanayado' }">
-                カナヤド
+            <li @click="change('swift')" v-bind:class="{ active: page === 'swift' }">
+                swift
             </li>
-            <li @click="change('chatApp')" v-bind:class="{ active: page === 'chatApp' }">
-                chatApp
+            <li @click="change('ruby')" v-bind:class="{ active: page === 'ruby' }">
+                ruby(rails)
             </li>
-            <li @click="change('newsCamera')" v-bind:class="{ active: page === 'newsCamera' }">
-               newsCamera
+            <li @click="change('javascript')" v-bind:class="{ active: page === 'javascript' }">
+               javascript
             </li>
-            <li @click="change('myPortfolio')" v-bind:class="{ active: page === 'myPortfolio' }">
-                myPortfolio
+            <li @click="change('java')" v-bind:class="{ active: page === 'java' }">
+                java
             </li>
-            <li @click="change('kanakko')" v-bind:class="{ active: page === 'kanakko' }">
-                かなっこ
+            <li @click="change('solidity')" v-bind:class="{ active: page === 'solidity' }">
+                solidity
             </li>
         </ul>
         <div class="main">
-            <ChatApp v-if="page === 'chatApp'"></chatApp>
-            <NewsApp v-else-if="page === 'newsCamera'"></newsApp>
-            <MyPortfolio v-else-if="page === 'myPortfolio'"></myPortfolio>
-            <Kanayado v-else-if="page === 'kanayado'"></kanayado>
-            <Kanakko v-else-if="page === 'kanakko'"></kanakko>
+            <Swift v-if="page === 'swift'"></Swift>
+            <Ruby v-else-if="page === 'ruby'"></Ruby>
+            <Javascript v-else-if="page === 'javascript'"></Javascript>
+            <Java v-else-if="page === 'java'"></Java>
+            <Solidity v-else-if="page === 'solidity'"></Solidity>
         </div>
     </div>
 </template>
 
 <script>
-import ChatApp from './ChatApp'
-import NewsApp from './NewsApp'
-import MyPortfolio from './MyPortfolio'
-import Kanayado from './Kanayado'
-import Kanakko from './Kanakko'
+import Swift from './Swift'
+import Ruby from './Ruby'
+import Javascript from './JavaScript'
+import Java from './Java'
+import Solidity from './Solidity'
 export default {
   data () {
     return {
-      page: 'chatApp'
+      page: 'swift'
     }
   },
   methods: {
@@ -48,11 +48,11 @@ export default {
     }
   },
   components: {
-    ChatApp,
-    NewsApp,
-    MyPortfolio,
-    Kanayado,
-    Kanakko
+    Swift,
+    Ruby,
+    Javascript,
+    Java,
+    Solidity
   }
 }
 </script>
