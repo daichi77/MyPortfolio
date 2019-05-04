@@ -1,8 +1,8 @@
 <template>
     <div class="content">
         <div class="flex-button">
-            <selectButton v-on:call-parent="changeView(true)" name="概要" v-bind:class="{ active: view }"></selectButton>
-            <selectButton v-on:call-parent="changeView(false)" name="プレビュー" v-bind:class="{ active: !view }"></selectButton>
+            <SelectButton v-on:call-parent="changeView(true)" name="概要" v-bind:class="{ active: view }"></SelectButton>
+            <SelectButton v-on:call-parent="changeView(false)" name="プレビュー" v-bind:class="{ active: !view }"></SelectButton>
         </div>
         <div id ="overview" v-if="view">
             ニュース１
@@ -14,9 +14,8 @@
 </template>
 
 <script>
-import selectButton from './selectButton'
+import SelectButton from './SelectButton'
 export default {
-  name: 'newsApp',
   data () {
     return {
       view: true
@@ -28,7 +27,7 @@ export default {
     }
   },
   components: {
-    selectButton
+    SelectButton
   }
 }
 </script>

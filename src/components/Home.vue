@@ -1,11 +1,11 @@
 <template>
     <div class="parent">
-        <div class="title">
+        <div class="HomeTitle">
              Ishida'sPortfolio
         </div>
         <div class="container">
-            <router-link to="/index"><div class="studyImage1"></div></router-link>
-            <div class="studyImage2"></div>
+            <router-link to="/myapp"><div class="studyImage1"></div></router-link>
+            <router-link to="/study"><div class="studyImage2"></div></router-link>
             <div class="studyImage3"></div>
             <div class="studyImage4"></div>
         </div>
@@ -34,7 +34,7 @@ export default {
     border-radius: 50%;
     border: none;
 }
-.title {
+.HomeTitle {
     color: white;
     width: 100%;
     font-size: 100px;
@@ -92,7 +92,7 @@ export default {
         border-radius: 50%;
         border: none;
     }
-    .title {
+    .HomeTitle {
         color: white;
         width: 100%;
         font-size: 60px;
@@ -149,7 +149,7 @@ export default {
         border: none;
         margin-bottom: 20px;
     }
-    .title {
+    .HomeTitle {
         color: white;
         width: 100%;
         font-size: 50px;
