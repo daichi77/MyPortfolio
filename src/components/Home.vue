@@ -6,8 +6,8 @@
         <div class="container">
             <router-link to="/myapp"><div class="studyImage1"></div></router-link>
             <router-link to="/study"><div class="studyImage2"></div></router-link>
-            <div class="studyImage3"></div>
-            <div class="studyImage4"></div>
+            <router-link to="/about"><div class="studyImage3"></div></router-link>
+            <router-link to="/about"><div class="studyImage4"></div></router-link>
         </div>
     </div>
 </template>
