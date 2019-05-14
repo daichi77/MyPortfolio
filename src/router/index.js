@@ -5,6 +5,8 @@ import Index from '@/components/MyApp/Index'
 import Study from '@/components/Study/Index'
 import About from '@/components/About/Index'
 import SNS from '@/components/SNS/Index'
+import Hobby from '@/components/Hobby/Index'
+import School from '@/components/School/Index'
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +31,14 @@ export default new Router({
     {
       path: '/sns',
       component: SNS
+    },
+    {
+      path: '/hobby',
+      component: Hobby
+    },
+    {
+      path: '/school',
+      component: School
     }
   ]
 })

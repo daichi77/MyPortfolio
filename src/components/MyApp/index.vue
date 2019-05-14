@@ -8,16 +8,13 @@
                 カナヤド
             </li>
             <li @click="change('chatApp')" v-bind:class="{ active: page === 'chatApp' }">
-                chatApp
+                ChatApp
             </li>
             <li @click="change('newsCamera')" v-bind:class="{ active: page === 'newsCamera' }">
                newsCamera
             </li>
             <li @click="change('myPortfolio')" v-bind:class="{ active: page === 'myPortfolio' }">
-                myPortfolio
-            </li>
-            <li @click="change('kanakko')" v-bind:class="{ active: page === 'kanakko' }">
-                かなっこ
+                Portfolio
             </li>
         </ul>
         <div class="main">
@@ -25,7 +22,6 @@
             <NewsApp v-else-if="page === 'newsCamera'"></newsApp>
             <MyPortfolio v-else-if="page === 'myPortfolio'"></myPortfolio>
             <Kanayado v-else-if="page === 'kanayado'"></kanayado>
-            <Kanakko v-else-if="page === 'kanakko'"></kanakko>
         </div>
     </div>
 </template>
@@ -35,11 +31,11 @@ import ChatApp from './ChatApp'
 import NewsApp from './NewsApp'
 import MyPortfolio from './MyPortfolio'
 import Kanayado from './Kanayado'
-import Kanakko from './Kanakko'
+
 export default {
   data () {
     return {
-      page: 'chatApp'
+      page: 'kanayado'
     }
   },
   methods: {
@@ -51,8 +47,7 @@ export default {
     ChatApp,
     NewsApp,
     MyPortfolio,
-    Kanayado,
-    Kanakko
+    Kanayado
   }
 }
 </script>
@@ -61,8 +56,7 @@ export default {
 @media screen and (min-width: 780px) {
     .title{
         color: white;
-        opacity: 70%;
-        font-size: 70px;
+        font-size: 50px;
         margin: 0 0 0;
         padding-top: 50px;
         opacity: 0.5;
@@ -71,12 +65,11 @@ export default {
         width: 65%;
         height: 40px;
         margin:20px 0 0;
-        background:#3333ff;
+        background:#3366ff;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-direction: row;
-        opacity: 0.5;
         justify-content: space-around;
         list-style: none;
         padding-left: 0;
@@ -94,7 +87,7 @@ export default {
             opacity: 0.5;
             &:hover{
                 color: white;
-                opacity: 2;
+                opacity: 1;
             }
         }
         .active{
@@ -170,7 +163,7 @@ export default {
         }
     }
     .main{
-        width: 65%;
+        width: 85%;
         margin: 20px auto 0;
     }
 }
@@ -178,7 +171,7 @@ export default {
     .title{
         color: white;
         opacity: 70%;
-        font-size: 70px;
+        font-size: 50px;
         margin: 0 0 0;
         padding-top: 50px;
         opacity: 0.5;

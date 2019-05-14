@@ -35,13 +35,20 @@ export default {
 
 }
 @media screen and (max-width: 780px) {
-
+  .select-button{
+        color: white;
+        opacity: 0.5;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-right: 10px;
+        font-weight: bold;
+    }
 }
 @media screen and (max-width: 480px) {
   .select-button{
         color: white;
         opacity: 0.5;
-        font-size: 14px;
+        font-size: 17px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         margin-right: 10px;
         font-weight: bold;
