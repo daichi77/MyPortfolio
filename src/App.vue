@@ -22,6 +22,7 @@ body{
   padding: 0px;
   display: block;
   background-image: url("./assets/bodyBackground.png");
+  background-size: 200% 100%;
 }
 #app {
   padding-bottom: 50px;
