@@ -62,6 +62,7 @@ export default {
         opacity: 0.5;
     }
     #menu{
+        min-width: 550px;
         width: 65%;
         height: 40px;
         margin:20px 0 0;
@@ -106,6 +107,7 @@ export default {
     }
     .main{
         width: 65%;
+        min-width: 550px;
         margin: 20px auto 0;
     }
 }
@@ -119,7 +121,7 @@ export default {
         opacity: 0.5;
     }
     #menu{
-        width: 85%;
+        width: 90%;
         height: 40px;
         margin:20px 0 0;
         background:#3333ff;
@@ -163,7 +165,7 @@ export default {
         }
     }
     .main{
-        width: 85%;
+        width: 90%;
         margin: 20px auto 0;
     }
 }
@@ -177,7 +179,7 @@ export default {
         opacity: 0.5;
     }
     #menu{
-        width: 92%;
+        width: 100%;
         height: 40px;
         margin:20px 0 0;
         background:#3333ff;
@@ -221,7 +223,7 @@ export default {
         }
     }
     .main{
-        width: 90%;
+        width: 97%;
         margin: 20px auto 0;
     }
 }

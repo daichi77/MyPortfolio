@@ -5,10 +5,43 @@
             <SelectButton v-on:call-parent="changeView(false)" name="プレビュー" v-bind:class="{ active: !view }"></SelectButton>
         </div>
         <div id ="overview" v-if="view">
-            ポートフォリオ１
+          <div class="row-flex">
+            <img src="../../assets/portfolioIcon.png" class="icon">
+            <div>
+              <div class="appName">MyPortfolio</div>
+              <div class="concept">コンセプト</div>
+              <div class="sentence">ポートフォリオサイト</div>
+              <div class="skill">
+                <div>
+                  <span>仕様技術</span><br>vue.js
+                </div>
+                <div class="right">
+                  <span>稼働環境</span><br>web
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subTitle">説明</div>
+          <div class="sentence">
+            自分のポートフォリオサイトです。<br>
+            自己紹介、作ったアプリ,勉強,趣味,sns,学校でしてることの6つのページがあります。<br>
+          </div>
+          <div class="subTitle">反省点</div>
+          <div class="sentence">
+            デザインを2週間くらい考えていまだに納得してません。<br>
+            見やすいデザイン、使いやすいデザインをもっと勉強するべきだと思いました。<br>
+            vue.jsを勉強しながら作ったので思ったより開発に時間がかかってしまいました。<br>
+            またファイル構成やコードを綺麗にできてないのでもっと見やすいコードを書くようにしていきたいです。
+          </div>
+          <div class="subTitle">URL</div>
+          <div class="sentence">
+            今後リリース予定です。
+          </div>
         </div>
         <div id ="preview" v-if="!view">
-            ポートフォリオ２
+            <img src="../../assets/portfolio1.png" class="portfolioImage">
+            <img src="../../assets/portfolio2.png" class="portfolioImage">
+            <img src="../../assets/portfolio3.png" class="portfolioImage">
         </div>
     </div>
 </template>
@@ -33,49 +66,32 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (min-width: 780px) {
-    .content{
-        margin: 20px 0 0;
-        width: 100%;
+@media screen and (min-width: 781px) {
+  #preview{
+    .portfolioImage{
+      width: 540px;
+      height: 300px;
+      margin: 10px auto 0;
+      border: 1px solid lightgray;
     }
-    .flex-button{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: left;
-    }
-    .select-button.active{
-        opacity: 1;
-        color: white;
-        border-bottom: 5px solid white;
-        font-size: 20px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-right: 10px;
-        font-weight: bold;
-    }
+  }
 }
-@media screen and (max-width: 780px) {
-
+@media screen and (max-width: 780px) and (min-width: 481px){
+  .portfolioImage{
+      width: 400px;
+      height: 280px;
+      margin: 10px auto 0;
+      border: 1px solid lightgray;
+  }
 }
 @media screen and (max-width: 480px) {
-  .content{
-        margin: 20px 0 0;
-        width: 100%;
+  #preview{
+    .portfolioImage{
+      width: 290px;
+      height: 160px;
+      margin: 10px auto 0;
+      border: 1px solid lightgray;
     }
-    .flex-button{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: left;
-    }
-    .select-button.active{
-        opacity: 1;
-        color: white;
-        border-bottom: 5px solid white;
-        font-size: 12px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-right: 5px;
-        font-weight: bold;
-    }
+  }
 }
 </style>
