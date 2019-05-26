@@ -111,7 +111,7 @@ export default {
         margin: 20px auto 0;
     }
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) and (min-width: 481px){
     .title{
         color: white;
         opacity: 70%;
