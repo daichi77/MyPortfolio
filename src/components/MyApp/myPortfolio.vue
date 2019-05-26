@@ -78,10 +78,10 @@ export default {
 }
 @media screen and (max-width: 780px) and (min-width: 481px){
   .portfolioImage{
-      width: 400px;
-      height: 280px;
-      margin: 10px auto 0;
-      border: 1px solid lightgray;
+    width: 400px;
+    height: 280px;
+    margin: 10px auto 0;
+    border: 1px solid lightgray;
   }
 }
 @media screen and (max-width: 480px) {

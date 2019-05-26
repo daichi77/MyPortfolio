@@ -75,7 +75,7 @@ export default {
     margin: 10px auto 0;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) and (min-width: 481px) {
   .chatAppImage{
     width: 400px;
     height: 280px;

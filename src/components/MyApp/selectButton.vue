@@ -23,35 +23,34 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (min-width: 780px) {
-    .select-button{
-        color: white;
-        opacity: 0.5;
-        font-size: 20px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-right: 10px;
-        font-weight: bold;
-    }
-
-}
-@media screen and (max-width: 780px) {
+@media screen and (min-width: 781px) {
   .select-button{
-        color: white;
-        opacity: 0.5;
-        font-size: 20px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-right: 10px;
-        font-weight: bold;
-    }
+    color: white;
+    opacity: 0.5;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 780px) and (min-width: 481px) {
+  .select-button{
+    color: white;
+    opacity: 0.5;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 10px;
+    font-weight: bold;
+  }
 }
 @media screen and (max-width: 480px) {
   .select-button{
-        color: white;
-        opacity: 0.5;
-        font-size: 17px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-right: 10px;
-        font-weight: bold;
-    }
+    color: white;
+    opacity: 0.5;
+    font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 10px;
+    font-weight: bold;
+  }
 }
 </style>

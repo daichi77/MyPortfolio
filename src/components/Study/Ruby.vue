@@ -31,19 +31,4 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (min-width: 780px) {
-  .content{
-    margin: 20px 0 0;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 780px) {
-
-}
-@media screen and (max-width: 480px) {
-  .content{
-    margin: 20px 0 0;
-    width: 100%;
-  }
-}
 </style>

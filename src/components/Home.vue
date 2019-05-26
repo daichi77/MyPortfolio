@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 781px) {
     @mixin Image {
         width: 130px;
         height: 130px;
@@ -114,7 +114,7 @@ export default {
         }
     }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) and (min-width: 481px) {
     @mixin Image {
         width: 110px;
         height: 110px;
