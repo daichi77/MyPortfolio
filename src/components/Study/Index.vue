@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="title">
-            Study
+            {{ page }}
         </div>
         <ul id="menu">
             <li @click="change('swift')" v-bind:class="{ active: page === 'swift' }">
@@ -13,9 +13,6 @@
             <li @click="change('javascript')" v-bind:class="{ active: page === 'javascript' }">
                javascript
             </li>
-            <li @click="change('java')" v-bind:class="{ active: page === 'java' }">
-                java
-            </li>
             <li @click="change('solidity')" v-bind:class="{ active: page === 'solidity' }">
                 solidity
             </li>
@@ -24,7 +21,6 @@
             <Swift v-if="page === 'swift'"></Swift>
             <Ruby v-else-if="page === 'ruby'"></Ruby>
             <Javascript v-else-if="page === 'javascript'"></Javascript>
-            <Java v-else-if="page === 'java'"></Java>
             <Solidity v-else-if="page === 'solidity'"></Solidity>
         </div>
     </div>
@@ -34,7 +30,6 @@
 import Swift from './Swift'
 import Ruby from './Ruby'
 import Javascript from './JavaScript'
-import Java from './Java'
 import Solidity from './Solidity'
 export default {
   data () {
@@ -51,7 +46,6 @@ export default {
     Swift,
     Ruby,
     Javascript,
-    Java,
     Solidity
   }
 }
@@ -61,22 +55,21 @@ export default {
 @media screen and (min-width: 780px) {
     .title{
         color: white;
-        opacity: 70%;
-        font-size: 70px;
+        font-size: 50px;
         margin: 0 0 0;
         padding-top: 50px;
         opacity: 0.5;
     }
     #menu{
+        min-width: 550px;
         width: 65%;
         height: 40px;
         margin:20px 0 0;
-        background:#3333ff;
+        background:#3366ff;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-direction: row;
-        opacity: 0.5;
         justify-content: space-around;
         list-style: none;
         padding-left: 0;
@@ -94,7 +87,7 @@ export default {
             opacity: 0.5;
             &:hover{
                 color: white;
-                opacity: 2;
+                opacity: 1;
             }
         }
         .active{
@@ -113,10 +106,11 @@ export default {
     }
     .main{
         width: 65%;
+        min-width: 550px;
         margin: 20px auto 0;
     }
 }
-@media screen and (max-width: 780px) and (min-width: 481px){
+@media screen and (max-width: 780px){
     .title{
         color: white;
         opacity: 70%;
@@ -126,7 +120,7 @@ export default {
         opacity: 0.5;
     }
     #menu{
-        width: 85%;
+        width: 90%;
         height: 40px;
         margin:20px 0 0;
         background:#3333ff;
@@ -170,7 +164,7 @@ export default {
         }
     }
     .main{
-        width: 65%;
+        width: 90%;
         margin: 20px auto 0;
     }
 }
@@ -178,13 +172,13 @@ export default {
     .title{
         color: white;
         opacity: 70%;
-        font-size: 70px;
+        font-size: 50px;
         margin: 0 0 0;
         padding-top: 50px;
         opacity: 0.5;
     }
     #menu{
-        width: 92%;
+        width: 100%;
         height: 40px;
         margin:20px 0 0;
         background:#3333ff;
@@ -228,7 +222,7 @@ export default {
         }
     }
     .main{
-        width: 100%;
+        width: 97%;
         margin: 20px auto 0;
     }
 }
