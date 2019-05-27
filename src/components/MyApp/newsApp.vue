@@ -67,8 +67,6 @@ export default {
 
 <style lang="scss">
 @media screen and (min-width: 780px) {
-
-  
   #preview{
     .sample-box{
       width: 100%;
