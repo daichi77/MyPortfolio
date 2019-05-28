@@ -31,16 +31,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-      page: 'chatApp'
-    }
-  },
-  methods: {
-    change: function (data) {
-      this.page = data
-    }
-  }
 }
 </script>
 
