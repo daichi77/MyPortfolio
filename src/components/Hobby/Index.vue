@@ -43,22 +43,11 @@
             </div>
           </div>
         </div>
-
     </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      page: 'chatApp'
-    }
-  },
-  methods: {
-    change: function (data) {
-      this.page = data
-    }
-  }
 }
 </script>
 
@@ -111,7 +100,7 @@ export default {
       }
     }
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) and (min-width:481px){
     .title{
         color: white;
         opacity: 70%;
