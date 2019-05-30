@@ -55,7 +55,6 @@ export default {
 @media screen and (min-width: 780px) {
     .title{
         color: white;
-        opacity: 70%;
         font-size: 70px;
         margin: 0 0 0;
         padding-top: 50px;
@@ -103,7 +102,6 @@ export default {
 @media screen and (max-width: 780px) and (min-width:481px){
     .title{
         color: white;
-        opacity: 70%;
         font-size: 70px;
         margin: 0 0 0;
         padding-top: 50px;
@@ -150,7 +148,6 @@ export default {
 @media screen and (max-width: 480px){
     .title{
         color: white;
-        opacity: 70%;
         font-size: 70px;
         margin: 0 0 0;
         padding-top: 50px;
