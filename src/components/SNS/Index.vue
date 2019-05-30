@@ -29,12 +29,11 @@ export default {
 <style lang="scss">
 @media screen and (min-width: 780px){
     .title{
-        color: white;
-        opacity: 70%;
-        font-size: 70px;
-        margin: 0 0 0;
-        padding-top: 50px;
-        opacity: 0.5;
+      color: white;
+      font-size: 70px;
+      margin: 0 0 0;
+      padding-top: 50px;
+      opacity: 0.5;
     }
     .main{
       width: 65%;
