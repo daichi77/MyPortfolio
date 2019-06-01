@@ -6,14 +6,15 @@
         <div class="profileContainer">
           <div class="profileTitle">プロフィール</div>
           <div class="profile">
-            <img src="../../assets/myImage.png" class="myImage">
             <div class="profileText">
               名前: 石田大智<br>
               年齢: 20歳<br>
-              大学: 金沢工業大学<br>
+              大学: 金沢工業大学
+            </div>
+            <div class="profileText">
               学科: メディア情報<br>
               学年: 3年<br>
-              出身: 福井県<br>
+              出身: 福井県
             </div>
           </div>
           <div class="profileTitle">自己紹介</div>
@@ -60,17 +61,13 @@ export default {
       .profile{
         margin-left: auto;
         margin-right: auto;
-        width: 750px;
+        width: 600px;
         display: flex;
         flex-direction: row;
-        .myImage{
-          width: 190px;
-          height: 250px;
-          margin-left: 100px;
-        }
+        justify-content: space-around;
         .profileText{
             padding-top: 15px;
-            width: 450px;
+            width: 250px;
             color: white;
             font-size: 25px;
             margin: 0 0 0;
@@ -120,17 +117,13 @@ export default {
       width: 480px;
       border-radius: 20px;
       margin: auto;
+      padding: 5px;
       .profile{
         margin-left: auto;
         margin-right: auto;
         width: 470px;
         display: flex;
         flex-direction: row;
-        .myImage{
-          width: 170px;
-          height: 200px;
-          margin-left: 20px;
-        }
         .profileText{
           padding-top: 15px;
           width: 280px;
@@ -174,7 +167,7 @@ export default {
     .profileContainer{
       background: #6495ed;
       width: 300px;
-      border-radius: 20px;
+      border-radius: 10px;
       margin: auto;
       .profile{
         margin-left: auto;
@@ -182,12 +175,7 @@ export default {
         width: 300px;
         display: flex;
         flex-direction: row;
-        .myImage{
-          width: 130px;
-          height: 160px;
-          padding-top: 15px;
-          margin-left: 10px;
-        }
+        padding: 2px;
         .profileText{
             padding-top: 15px;
             width: 150px;
@@ -208,7 +196,7 @@ export default {
           font-weight: bold;
           margin-left: auto;
           margin-right: auto;
-          width: 300px;
+          width: 290px;
       }
     }
 }

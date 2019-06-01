@@ -35,7 +35,7 @@
           </div>
           <div class="subTitle">URL</div>
           <div class="sentence">
-            今後リリース予定です。
+            <a href="https://github.com/daichi77/MyPortfolio">github</a>
           </div>
         </div>
         <div id ="preview" v-if="!view">

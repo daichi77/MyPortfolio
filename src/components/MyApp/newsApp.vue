@@ -38,9 +38,9 @@
         </div>
         <div id ="preview" v-if="!view">
           <div class="sample-box">
-            <img src="../../assets/newsApp1.png" class="sampleImage">
-            <img src="../../assets/newsApp2.png" class="sampleImage">
-            <img src="../../assets/newsApp3.png" class="sampleImage">
+            <video src="../../assets/newsApp.mp4" controls class="video"></video>
+            <img src="../../assets/newsImage1.png" class="sample-image">
+            <img src="../../assets/newsImage2.png" class="sample-image">
           </div>
         </div>
     </div>
@@ -71,12 +71,20 @@ export default {
     .sample-box{
       width: 100%;
       display: flex;
-      flex-direction: row;
-      padding-top: 30px;
-      justify-content: space-around;
-      .sampleImage{
-        width: 180px;
-        height: 300px;;
+      flex-direction: column;
+      background: #6495ed;
+      border-radius: 20px;
+      margin-top: 20px;
+      padding-top: 20px;
+      .video{
+        height: 330px;
+        width: 600px;
+        margin:20px auto 20px;
+      }
+      .sample-image{
+        width: 600px;
+        height: 330px;
+        margin:20px auto 20px;
       }
     }
   }
@@ -85,29 +93,44 @@ export default {
   #preview{
     .sample-box{
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      padding-top: 30px;
       justify-content: space-around;
-      .sampleImage{
-        width: 140px;
-        height: 230px;;
+      background: #6495ed;
+      flex-direction: column;
+      border-radius: 20px;
+      margin-top: 20px;
+      padding-top: 20px;
+      .video{
+        height: 450px;
+        width:220px;
+        margin:20px auto 20px;
+      }
+      .sample-image{
+        width: 400px;
+        height: 220px;
+        margin:20px auto 20px;
       }
     }
   }
 }
 @media screen and (max-width: 480px) {
-    #preview{
-      .sample-box{
-        width: 100%;
-        padding-top: 30px;
-        .sampleImage{
-          display: block;
-          width: 250px;
-          height: 500px;
-          margin: 0 auto 10px;
-        }
+  #preview{
+    .sample-box{
+      width: 100%;
+      background: #6495ed;
+      border-radius: 20px;
+      margin-top: 20px;
+      padding-top: 20px;
+      .video{
+        height: 150px;
+        width:280px;
+        margin:20px auto 20px;
+      }
+      .sample-image{
+        width: 280px;
+        height: 150px;
+        margin:20px auto 20px;
       }
     }
+  }
 }
 </style>

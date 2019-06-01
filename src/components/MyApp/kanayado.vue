@@ -34,9 +34,13 @@
             githubの管理<br>
             コンテストでのプレゼン、仕様書制作
           </div>
+          <div class="subTitle">URL</div>
+          <div class="sentence">
+            <a href="https://github.com/daichi77/kanazawaApp-2018">github</a>
+          </div>
         </div>
         <div id ="preview" v-if="!view">
-            カナヤド２
+            <video src="../../assets/kanayado.mp4" controls class="video"></video>
         </div>
     </div>
 </template>
@@ -149,6 +153,13 @@ export default {
         @include body-font();
       }
     }
+    #preview{
+      .video{
+        height: 330px;
+        width: 600px;
+        margin:20px auto 20px;
+      }
+    }
   }
 }
 @media screen and (max-width: 780px) and (min-width: 481px) {
@@ -235,6 +246,13 @@ export default {
       }
       .sentence{
         @include body-font();
+      }
+    }
+    #preview{
+      .video{
+        height: 450px;
+        width:220px;
+        margin:20px auto 20px;
       }
     }
   }
@@ -330,6 +348,13 @@ export default {
       }
       .sentence{
         @include body-font();
+      }
+    }
+    #preview{
+      .video{
+        height: 150px;
+        width:280px;
+        margin:20px auto 20px;
       }
     }
   }
