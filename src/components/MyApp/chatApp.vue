@@ -6,7 +6,7 @@
         </div>
         <div id ="overview" v-if="view">
           <div class="row-flex">
-            <img src="../../assets/chatIcon.png" class="icon">
+            <div class="chat-icon"></div>
             <div>
               <div class="appName">TVTALK</div>
               <div class="concept">コンセプト</div>
@@ -74,6 +74,14 @@ export default {
     height: 300px;
     margin: 10px auto 0;
   }
+  .chat-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 180px;
+    width: 180px;
+    background-image: url("../../assets/largeAppIcon.png");
+    background-position: -5px -195px;
+  }
 }
 @media screen and (max-width: 780px) and (min-width: 481px) {
   .chatAppImage{
@@ -81,12 +89,30 @@ export default {
     height: 280px;
     margin: 10px auto 0;
   }
+  .chat-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    width: 150px;
+    background-image: url("../../assets/mediumAppIcon.png");
+    background-position: -5px -5px;
+    margin-top: 17px;
+  }
 }
 @media screen and (max-width: 480px) {
   .chatAppImage{
     width: 290px;
     height: 160px;
     margin: 10px auto 0;
+  }
+  .chat-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 90px;
+    width: 90px;
+    margin-top: 17px;
+    background-image: url("../../assets/smallAppIcon.png");
+    background-position: -5px -105px;
   }
 }
 </style>

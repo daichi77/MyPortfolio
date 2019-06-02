@@ -6,7 +6,7 @@
         </div>
         <div id ="overview" v-if="view">
           <div class="row-flex">
-            <img src="../../assets/kanayado.png" class="icon">
+            <div class="kanayado-icon"></div>
             <div>
               <div class="appName">カナヤド</div>
               <div class="concept">コンセプト<br><span>一目で分かるお宿情報</span></div>
@@ -75,7 +75,7 @@ export default {
   @mixin row-flex{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
   .content{
     margin: 20px 0 0;
@@ -102,10 +102,14 @@ export default {
       margin-right: auto;
       .row-flex{
         @include row-flex();
-        .icon{
+        max-width: 550px;
+        .kanayado-icon{
+          background-repeat: no-repeat;
+          display: block;
           height: 180px;
           width: 180px;
-          margin-right: 50px;
+          background-image: url("../../assets/largeAppIcon.png");
+          background-position: -195px -5px;
         }
         div{
           .appName{
@@ -200,11 +204,15 @@ export default {
       margin-right: auto;
       .row-flex{
         @include row-flex();
-        .icon{
+        justify-content: space-around;
+        min-width: 460px;
+        .kanayado-icon{
+          background-repeat: no-repeat;
           display: block;
-          width: 150px;
           height: 150px;
-          margin-right: 20px;
+          width: 150px;
+          background-image: url("../../assets/mediumAppIcon.png");
+          background-position: -5px -165px;
         }
         div{
           .appName{
@@ -294,12 +302,15 @@ export default {
       margin-right: auto;
       .row-flex{
         @include row-flex();
-        .icon{
-          margin-top: 15px;
+        justify-content: space-around;
+        .kanayado-icon{
+          margin-top: 17px;
+          background-repeat: no-repeat;
           display: block;
-          width: 90px;
           height: 90px;
-          margin-right: 10px;
+          width: 90px;
+          background-image: url("../../assets/smallAppIcon.png");
+          background-position: -105px -5px;
         }
         div{
           .appName{
@@ -307,8 +318,10 @@ export default {
             font-size: 20px;
             font-weight: bold;
             text-align: left;
+            width: 180px;
           }
           .concept{
+            width: 180px;
             color: orange;
             font-size: 15px;
             font-weight: bold;
@@ -321,9 +334,11 @@ export default {
             }
           }
           .sentence{
+            width: 180px;
             @include body-font();
           }
           .skill{
+            width: 180px;
             @include row-flex();
             margin-top: 10px;
             div{
