@@ -34,12 +34,13 @@ export default {
     @mixin Image {
         width: 130px;
         height: 130px;
-        background-size:105% 105%;
-        background-position: center;
         border-radius: 50%;
         border: none;
         margin-bottom: 40px;
         opacity: unset;
+        background-image: url(../assets/largeIcon.png);
+        background-repeat: no-repeat;
+        display: block;
     }
     .HomeTitle {
         color: white;
@@ -71,45 +72,45 @@ export default {
         }
         .studyImage{
             @include Image();
-            background-image: url("../assets/study.png");
+            background-position: -5px -285px;
             &:hover{
-                background-image: url("../assets/studyhover.png");
+                background-position: -145px -285px;
             }
         }
         .appImage{
             @include Image();
-            background-image: url("../assets/app.png");
+            background-position: -425px -145px;
             &:hover{
-                background-image: url("../assets/apphover.png");
+                background-position: -425px -285px;
             }
         }
         .aboutImage{
             @include Image();
-            background-image: url("../assets/profile.png");
+            background-position: -5px -5px;
             &:hover{
-                background-image: url("../assets/profilehover.png");
+                background-position: -145px -5px;
             }
         }
 
         .snsImage{
             @include Image();
-            background-image: url("../assets/sns.png");
+            background-position: -145px -145px;
             &:hover{
-                background-image: url("../assets/snshover.png");
+                background-position: -285px -145px;
             }
         }
         .schoolImage{
             @include Image();
-            background-image: url("../assets/school.png");
+            background-position: -285px -5px;
             &:hover{
-                background-image: url("../assets/schoolhover.png");
+                background-position: -5px -145px;
             }
         }
         .hobbyImage{
             @include Image();
-            background-image: url("../assets/hobby.png");
+            background-position: -285px -285px;
             &:hover{
-                background-image: url("../assets/hobbyhover.png");
+                background-position: -425px -5px;
             }
         }
     }
@@ -118,12 +119,10 @@ export default {
     @mixin Image {
         width: 110px;
         height: 110px;
-        background-size:105% 105%;
-        background-position: center;
         border-radius: 50%;
         border: none;
         margin-bottom: 40px;
-        opacity: unset;
+        background-image: url("../assets/mediumIcon.png");
     }
     .HomeTitle {
         color: white;
@@ -152,44 +151,44 @@ export default {
         }
         .studyImage{
             @include Image();
-            background-image: url("../assets/study.png");
+            background-position: -5px -245px;
             &:hover{
-                background-image: url("../assets/studyhover.png");
+                background-position: -125px -245px;
             }
         }
         .appImage{
             @include Image();
-            background-image: url("../assets/app.png");
+            background-position: -365px -125px;
             &:hover{
-                background-image: url("../assets/apphover.png");
+                background-position: -365px -245px;
             }
         }
         .aboutImage{
             @include Image();
-            background-image: url("../assets/profile.png");
+            background-position: -5px -5px;
             &:hover{
-                background-image: url("../assets/profilehover.png");
+                background-position: -125px -5px;
             }
         }
         .snsImage{
             @include Image();
-            background-image: url("../assets/sns.png");
+            background-position: -125px -125px;
             &:hover{
-                background-image: url("../assets/snshover.png");
+                background-position: -245px -125px;
             }
         }
         .schoolImage{
             @include Image();
-            background-image: url("../assets/school.png");
+            background-position: -245px -5px;
             &:hover{
-                background-image: url("../assets/schoolhover.png");
+                background-position: -5px -125px;
             }
         }
         .hobbyImage{
             @include Image();
-            background-image: url("../assets/hobby.png");
+            background-position: -245px -245px;
             &:hover{
-                background-image: url("../assets/hobbyhover.png");
+                background-position: -365px -5px;
             }
         }
     }
@@ -198,8 +197,7 @@ export default {
     @mixin Image {
         width: 75px;
         height: 75px;
-        background-size:105% 105%;
-        background-position: center;
+        background-image: url("../assets/smallIcon.png");
         border-radius: 50%;
         border: none;
         margin-bottom: 20px;
@@ -235,44 +233,44 @@ export default {
         }
         .studyImage{
         @include Image();
-            background-image: url("../assets/study.png");
+            background-position: -5px -175px;
             &:hover{
-                background-image: url("../assets/studyhover.png");
+                background-position: -90px -175px;
             }
         }
         .appImage{
             @include Image();
-            background-image: url("../assets/app.png");
+            background-position: -260px -90px;
             &:hover{
-                background-image: url("../assets/apphover.png");
+                background-position: -260px -175px;
             }
         }
         .aboutImage{
             @include Image();
-            background-image: url("../assets/profile.png");
+            background-position: -5px -5px;
             &:hover{
-                background-image: url("../assets/profilehover.png");
+                background-position: -90px -5px;
             }
         }
         .snsImage{
             @include Image();
-            background-image: url("../assets/sns.png");
+            background-position: -90px -90px;
             &:hover{
-                background-image: url("../assets/snshover.png");
+                background-position: -175px -90px;
             }
         }
         .schoolImage{
             @include Image();
-            background-image: url("../assets/school.png");
+            background-position: -175px -5px;
             &:hover{
-                background-image: url("../assets/schoolhover.png");
+                background-position: -5px -90px;
             }
         }
         .hobbyImage{
             @include Image();
-            background-image: url("../assets/hobby.png");
+            background-position: -175px -175px;
             &:hover{
-                background-image: url("../assets/hobbyhover.png");
+                background-position: -260px -5px;
             }
         }
     }

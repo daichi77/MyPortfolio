@@ -6,7 +6,7 @@
         </div>
         <div id ="overview" v-if="view">
           <div class="row-flex">
-            <img src="../../assets/newsIcon.png" class="icon">
+            <div class="news-icon"></div>
             <div>
               <div class="appName">ニュースカメラ</div>
               <div class="concept">コンセプト<br><span>写真をテレビニュース風に加工する</span></div>
@@ -88,6 +88,15 @@ export default {
       }
     }
   }
+  .news-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 180px;
+    width: 180px;
+    margin-right: 20px;
+    background-image: url("../../assets/largeAppIcon.png");
+    background-position: -5px -5px;
+  }
 }
 @media screen and (max-width: 780px) and (min-width: 481px) {
   #preview{
@@ -111,6 +120,14 @@ export default {
       }
     }
   }
+  .news-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    width: 150px;
+    background-image: url("../../assets/mediumAppIcon.png");
+    background-position: -165px -5px;
+  }
 }
 @media screen and (max-width: 480px) {
   #preview{
@@ -131,6 +148,15 @@ export default {
         margin:20px auto 20px;
       }
     }
+  }
+  .news-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 90px;
+    width: 90px;
+    background-image: url("../../assets/smallAppIcon.png");
+    background-position: -5px -5px;
+    margin-top: 17px;
   }
 }
 </style>

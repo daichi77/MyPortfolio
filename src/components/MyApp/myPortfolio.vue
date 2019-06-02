@@ -6,7 +6,7 @@
         </div>
         <div id ="overview" v-if="view">
           <div class="row-flex">
-            <img src="../../assets/portfolioIcon.png" class="icon">
+            <div class="portfolio-icon"></div>
             <div>
               <div class="appName">MyPortfolio</div>
               <div class="concept">コンセプト</div>
@@ -75,6 +75,14 @@ export default {
       border: 1px solid lightgray;
     }
   }
+  .portfolio-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 180px;
+    width: 180px;
+    background-image: url("../../assets/largeAppIcon.png");
+    background-position: -195px -195px;
+  }
 }
 @media screen and (max-width: 780px) and (min-width: 481px){
   #preview{
@@ -85,6 +93,14 @@ export default {
       border: 1px solid lightgray;
     }
   }
+  .portfolio-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    width: 150px;
+    background-image: url("../../assets/mediumAppIcon.png");
+    background-position: -165px -165px;
+  }
 }
 @media screen and (max-width: 480px) {
   #preview{
@@ -94,6 +110,15 @@ export default {
       margin: 10px auto 0;
       border: 1px solid lightgray;
     }
+  }
+  .portfolio-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 90px;
+    width: 90px;
+    background-image: url("../../assets/smallAppIcon.png");
+    background-position: -105px -105px;
+    margin-top: 17px;
   }
 }
 </style>
