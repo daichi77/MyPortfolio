@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="parent">
+        <router-link to="/"><HomeButton></HomeButton></router-link>
         <div class="title">
             Hobby
         </div>
@@ -47,17 +48,25 @@
 </template>
 
 <script>
+import HomeButton from '../HomeButton'
 export default {
+  components: {
+    HomeButton
+  }
 }
 </script>
 
 <style lang="scss">
 @media screen and (min-width: 780px) {
+  .parent{
+    padding-top: 20px;
+    a{
+        text-decoration: none;
+    }
     .title{
         color: white;
         font-size: 70px;
         margin: 0 0 0;
-        padding-top: 50px;
         opacity: 0.5;
     }
     .main{
@@ -98,13 +107,18 @@ export default {
         }
       }
     }
+  }
 }
 @media screen and (max-width: 780px) and (min-width:481px){
+  .parent{
+    padding-top: 20px;
+    a{
+        text-decoration: none;
+    }
     .title{
         color: white;
         font-size: 70px;
         margin: 0 0 0;
-        padding-top: 50px;
         opacity: 0.5;
     }
     .main{
@@ -144,13 +158,18 @@ export default {
         }
       }
     }
+  }
 }
 @media screen and (max-width: 480px){
+  .parent{
+        padding-top: 10px;
+        a{
+            text-decoration: none;
+        }
     .title{
         color: white;
         font-size: 70px;
         margin: 0 0 0;
-        padding-top: 50px;
         opacity: 0.5;
     }
     .main{
@@ -191,5 +210,6 @@ export default {
         }
       }
     }
+  }
 }
 </style>
