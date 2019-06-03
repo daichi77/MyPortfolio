@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="parent">
+        <router-link to="/"><HomeButton></HomeButton></router-link>
         <div class="title">
             SNS
         </div>
@@ -12,7 +13,7 @@
               <a href="https://github.com/daichi77"><img src="../../assets/github.png" class="sns-button"></a>
             </div>
             <div class="sns-sentence">
-              qiitaやgithubをSNSとくくるのは違う気がしますが、<br>一応貼っておきます。<br>
+              qiitaやgithubをSNSとくくるのは違う気がしますが、一応貼っておきます。<br>
               facebookはほとんど使っていません。<br>
               twitterはどーでもいいこと呟いています。
             </div>
@@ -22,17 +23,25 @@
 </template>
 
 <script>
+import HomeButton from '../HomeButton'
 export default {
+  components: {
+    HomeButton
+  }
 }
 </script>
 
 <style lang="scss">
 @media screen and (min-width: 780px){
+  .parent{
+    padding-top: 20px;
+    a{
+        text-decoration: none;
+    }
     .title{
       color: white;
       font-size: 70px;
       margin: 0 0 0;
-      padding-top: 50px;
       opacity: 0.5;
     }
     .main{
@@ -68,15 +77,19 @@ export default {
           font-weight: bold;
       }
     }
+  }
 }
 @media screen and (max-width: 780px) and (min-width: 481px){
+  .parent{
+    padding-top: 20px;
+    a{
+      text-decoration: none;
+    }
     .title{
-        color: white;
-        opacity: 70%;
-        font-size: 70px;
-        margin: 0 0 0;
-        padding-top: 50px;
-        opacity: 0.5;
+      color: white;
+      font-size: 70px;
+      margin: 0 0 0;
+      opacity: 0.5;
     }
     .main{
       width: 90%;
@@ -110,15 +123,19 @@ export default {
           font-weight: bold;
       }
     }
+  }
 }
 @media screen and (max-width: 480px){
+  .parent{
+    padding-top: 10px;
+    a{
+        text-decoration: none;
+    }
     .title{
-        color: white;
-        opacity: 70%;
-        font-size: 70px;
-        margin: 0 0 0;
-        padding-top: 50px;
-        opacity: 0.5;
+      color: white;
+      font-size: 70px;
+      margin: 0 0 0;
+      opacity: 0.5;
     }
     .main{
       width: 97%;
@@ -153,5 +170,6 @@ export default {
           font-weight: bold;
       }
     }
+  }
 }
 </style>

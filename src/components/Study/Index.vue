@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="parent">
+        <router-link to="/"><HomeButton></HomeButton></router-link>
         <div class="title">
             {{ page }}
         </div>
@@ -31,6 +32,7 @@ import Swift from './Swift'
 import Ruby from './Ruby'
 import Javascript from './JavaScript'
 import Solidity from './Solidity'
+import HomeButton from '../HomeButton'
 export default {
   data () {
     return {
@@ -46,79 +48,89 @@ export default {
     Swift,
     Ruby,
     Javascript,
-    Solidity
+    Solidity,
+    HomeButton
   }
 }
 </script>
 
 <style lang="scss">
 @media screen and (min-width: 781px) {
-    .title{
-        color: white;
-        font-size: 50px;
-        margin: 0 0 0;
-        padding-top: 50px;
-        opacity: 0.5;
-    }
-    #menu{
-        min-width: 550px;
-        width: 65%;
-        height: 40px;
-        margin:20px 0 0;
-        background:#3366ff;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        list-style: none;
-        padding-left: 0;
-        li{
-            line-height: 40px;
-            height: 40px;
-            text-align: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-weight: bold;
-            font-size: 18px;
-            width: 18%;
-            list-style: none;
-            color: white;
+    .parent{
+        padding-top: 20px;
+        a{
             text-decoration: none;
+        }
+        .title{
+            color: white;
+            font-size: 50px;
+            margin: 0 0 0;
             opacity: 0.5;
-            &:hover{
+        }
+        #menu{
+            min-width: 550px;
+            width: 65%;
+            height: 40px;
+            margin:20px 0 0;
+            background:#3366ff;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+            padding-left: 0;
+            li{
+                line-height: 40px;
+                height: 40px;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: bold;
+                font-size: 18px;
+                width: 18%;
+                list-style: none;
                 color: white;
-                opacity: 1;
+                text-decoration: none;
+                opacity: 0.5;
+                &:hover{
+                    color: white;
+                    opacity: 1;
+                }
+            }
+            .active{
+                line-height: 40px;
+                height: 40px;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: bold;
+                font-size: 18px;
+                width: 18%;
+                list-style: none;
+                color: white;
+                text-decoration: none;
+                opacity: 1.0;
             }
         }
-        .active{
-            line-height: 40px;
-            height: 40px;
-            text-align: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-weight: bold;
-            font-size: 18px;
-            width: 18%;
-            list-style: none;
-            color: white;
-            text-decoration: none;
-            opacity: 1.0;
+        .main{
+            width: 65%;
+            min-width: 550px;
+            margin: 20px auto 0;
         }
-    }
-    .main{
-        width: 65%;
-        min-width: 550px;
-        margin: 20px auto 0;
     }
 }
 @media screen and (max-width: 780px) and (min-width: 481px){
-    .title{
+    .parent{
+        padding-top: 20px;
+        a{
+            text-decoration: none;
+        }
+        .title{
         color: white;
         font-size: 70px;
         margin: 0 0 0;
-        padding-top: 50px;
         opacity: 0.5;
-    }
-    #menu{
+        }
+        #menu{
         width: 90%;
         height: 40px;
         margin:20px 0 0;
@@ -161,67 +173,73 @@ export default {
             text-decoration: none;
             opacity: 1.0;
         }
-    }
-    .main{
+        }
+        .main{
         width: 90%;
         margin: 20px auto 0;
+        }
     }
 }
 @media screen and (max-width: 480px){
-    .title{
-        color: white;
-        font-size: 50px;
-        margin: 0 0 0;
-        padding-top: 50px;
-        opacity: 0.5;
-    }
-    #menu{
-        width: 100%;
-        height: 40px;
-        margin:20px 0 0;
-        background:#3333ff;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: row;
-        opacity: 0.5;
-        justify-content: space-around;
-        list-style: none;
-        padding-left: 0;
-        li{
-            line-height: 40px;
-            height: 40px;
-            width: 19%;
-            text-align: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-weight: bold;
-            font-size: 12px;
-            list-style: none;
-            color: white;
+    .parent{
+        padding-top: 10px;
+        a{
             text-decoration: none;
+        }
+        .title{
+            color: white;
+            font-size: 50px;
+            margin: 0 0 0;
             opacity: 0.5;
-            &:hover{
+        }
+        #menu{
+            width: 100%;
+            height: 40px;
+            margin:20px 0 0;
+            background:#3333ff;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            opacity: 0.5;
+            justify-content: space-around;
+            list-style: none;
+            padding-left: 0;
+            li{
+                line-height: 40px;
+                height: 40px;
+                width: 19%;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: bold;
+                font-size: 12px;
+                list-style: none;
                 color: white;
-                opacity: 2;
+                text-decoration: none;
+                opacity: 0.5;
+                &:hover{
+                    color: white;
+                    opacity: 2;
+                }
+            }
+            .active{
+                line-height: 40px;
+                height: 40px;
+                width: 19%;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: bold;
+                font-size: 12px;
+                list-style: none;
+                color: white;
+                text-decoration: none;
+                opacity: 1.0;
             }
         }
-        .active{
-            line-height: 40px;
-            height: 40px;
-            width: 19%;
-            text-align: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-weight: bold;
-            font-size: 12px;
-            list-style: none;
-            color: white;
-            text-decoration: none;
-            opacity: 1.0;
+        .main{
+            width: 97%;
+            margin: 20px auto 0;
         }
-    }
-    .main{
-        width: 97%;
-        margin: 20px auto 0;
     }
 }
 </style>

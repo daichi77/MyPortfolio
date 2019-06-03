@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="parent">
+        <router-link to="/"><HomeButton></HomeButton></router-link>
         <div class="title">
             About
         </div>
@@ -31,17 +32,25 @@
 </template>
 
 <script>
+import HomeButton from '../HomeButton'
 export default {
+  components: {
+    HomeButton
+  }
 }
 </script>
 
 <style lang="scss">
 @media screen and (min-width: 781px) {
+  .parent{
+    padding-top: 20px;
+    a{
+        text-decoration: none;
+    }
     .title{
         color: white;
         font-size: 70px;
         margin: 0 0 0;
-        padding-top: 50px;
         opacity: 0.5;
     }
     .profileTitle{
@@ -66,51 +75,56 @@ export default {
         flex-direction: row;
         justify-content: space-around;
         .profileText{
-            padding-top: 15px;
-            width: 250px;
+          padding-top: 15px;
+          width: 250px;
+          color: white;
+          font-size: 25px;
+          margin: 0 0 0;
+          margin-bottom: 30px;
+          font-weight: bold;
+          text-align: left;
+          padding-left: 30px;
+          a{
             color: white;
-            font-size: 25px;
-            margin: 0 0 0;
-            margin-bottom: 30px;
-            font-weight: bold;
-            text-align: left;
-            padding-left: 30px;
-            a{
-              color: white;
-              text-decoration: none;
-              &:hover{
-                color:steelblue;
-              }
+            text-decoration: none;
+            &:hover{
+              color:steelblue;
             }
+          }
         }
       }
       .introduction{
-          text-align: left;
-          color: white;
-          font-size: 20px;
-          margin: 0 0 0;
-          font-weight: bold;
-          margin-left: auto;
-          margin-right: auto;
-          width: 760px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        margin: 0 0 0;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        width: 760px;
       }
     }
+  }
 }
 @media screen and (min-width: 481px) and ( max-width: 780px){
+  .parent{
+    padding-top: 20px;
+    a{
+        text-decoration: none;
+    }
     .title{
-        color: white;
-        font-size: 60px;
-        margin: 0 0 0;
-        padding-top: 50px;
-        opacity: 0.5;
+      color: white;
+      font-size: 60px;
+      margin: 0 0 0;
+      opacity: 0.5;
     }
     .profileTitle{
-          font-weight: bold;
-          color: orange;
-          font-size: 25px;
-          margin: 0 0 0;
-          padding-top: 20px;
-          margin-bottom: 20px;
+      font-weight: bold;
+      color: orange;
+      font-size: 25px;
+      margin: 0 0 0;
+      padding-top: 20px;
+      margin-bottom: 20px;
     }
     .profileContainer{
       background: #6495ed;
@@ -147,22 +161,27 @@ export default {
           width: 470px;
       }
     }
+  }
 }
 @media screen and (max-width: 480px){
+  .parent{
+    padding-top: 20px;
+    a{
+      text-decoration: none;
+    }
     .title{
-        color: white;
-        font-size: 70px;
-        margin: 0 0 0;
-        padding-top: 50px;
-        opacity: 0.5;
+      color: white;
+      font-size: 70px;
+      margin: 0 0 0;
+      opacity: 0.5;
     }
     .profileTitle{
-        font-weight: bold;
-        color: orange;
-        font-size: 30px;
-        margin: 0 0 0;
-        padding-top: 20px;
-        margin-bottom: 20px;
+      font-weight: bold;
+      color: orange;
+      font-size: 30px;
+      margin: 0 0 0;
+      padding-top: 20px;
+      margin-bottom: 20px;
     }
     .profileContainer{
       background: #6495ed;
@@ -177,27 +196,28 @@ export default {
         flex-direction: row;
         padding: 2px;
         .profileText{
-            padding-top: 15px;
-            width: 150px;
-            color: white;
-            font-size: 15px;
-            margin: 0 0 0;
-            margin-bottom: 30px;
-            font-weight: bold;
-            text-align: left;
-            padding-left: 10px;
-        }
-      }
-      .introduction{
-          text-align: left;
+          padding-top: 15px;
+          width: 150px;
           color: white;
           font-size: 15px;
           margin: 0 0 0;
+          margin-bottom: 30px;
           font-weight: bold;
-          margin-left: auto;
-          margin-right: auto;
-          width: 290px;
+          text-align: left;
+          padding-left: 10px;
+        }
+      }
+      .introduction{
+        text-align: left;
+        color: white;
+        font-size: 15px;
+        margin: 0 0 0;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        width: 290px;
       }
     }
+  }
 }
 </style>
