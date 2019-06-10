@@ -36,7 +36,7 @@
           </div>
           <div class="subTitle">URL</div>
           <div class="sentence">
-            <a href="https://calm-garden-21543.herokuapp.com/">https://calm-garden-21543.herokuapp.com/</a>
+            <a href=" https://frozen-fjord-44878.herokuapp.com/"> https://frozen-fjord-44878.herokuapp.com/</a>
           </div>
         </div>
         <div id ="preview" v-if="!view">
